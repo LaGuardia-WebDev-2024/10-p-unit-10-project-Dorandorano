@@ -1,5 +1,8 @@
+
+
 body {
-  background-color: black;
+   
+  background-image: url("https://64.media.tumblr.com/93859b969037cf9ff67d0eb1a8e21e95/49ece6d4ba4b2e16-41/s640x960/3be349000c18eea5cc6a0835416eb461047adc76.gif");
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,23 +11,29 @@ body {
   font-family: Georgia, serif;
 }
 
+
+
 html{
   height: 100%;
   width: 100%;
 }
 
 #myCanvas {
-  border: 1px solid black;
+  border: 6px solid black;
 }
 
 .container{
   display: flex;
   flex-wrap: wrap;
-  background-color: white;
   justify-content: space-around;
   align-items: flex-start;
   padding-bottom: 20px;
+  color: white ;
 }
+
+
+
+
 
 .pic{
   height: 600px;
@@ -34,7 +43,7 @@ html{
 }
 
 h2{
-  color: black;
+  color: #9acced ;
 }
 
 #start{
