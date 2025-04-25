@@ -10,6 +10,16 @@ setup = function() {
     size(400, 400); 
     frameRate(1);
     
+    var Num = 0;
+    var textY = 50;
+    var pArray = [ "🎱 ", "🎰 ", "🎲 "];
+   
+    
+    for(var Num = 0; Num < pArray.length; Num++){
+  text(pArray [Num], 10, textY);
+   textY += 30;}
+    
+   
 };
 
  
