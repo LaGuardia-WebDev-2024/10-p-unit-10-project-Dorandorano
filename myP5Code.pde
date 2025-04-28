@@ -2,22 +2,19 @@ var bgImage = loadImage("https://i.ytimg.com/vi/W-29pQfOsAA/sddefault.jpg");
 
 var LanternImage = loadImage("https://www.pngall.com/wp-content/uploads/2/Decorative-Lantern-PNG-Clipart.png");
 
+var bloppImage = loadImage("https://i.pinimg.com/originals/b0/4d/3a/b04d3a0946bbe86a2722ce7fc2f4f472.gif")
+
 var LanternX = 0;
 
 var answer = 1;
+
+bloppX = 0;
 
 setup = function() {
     size(400, 400); 
     frameRate(1);
     
-    var Num = 0;
-    var textY = 50;
-    var pArray = [ "🎱 ", "🎰 ", "🎲 "];
-   
     
-    for(var Num = 0; Num < pArray.length; Num++){
-  text(pArray [Num], 10, textY);
-   textY += 30;}
     
    
 };
@@ -36,6 +33,8 @@ setup = function() {
    fill(255, 255, 255);
    
     drawLantern(LanternX,10);
+    drawEmoji();
+    drawBlopp();
    
    if (answer == 1) {
      text("no",184, 200);
@@ -76,6 +75,26 @@ setup = function() {
  
  };
  
+ var drawEmoji = function(){
+ var Num = 0;
+    var textY = 50;
+    var pArray = [ "🎱 ", "🎰 ", "🎲 "];
+   
+    
+    for(var Num = 0; Num < pArray.length; Num++){
+  text(pArray [Num], 10, textY);
+   textY += 30;}
+ };
+ 
+ var drawBlopp = function(){
+ 
+ bloppX = -20;
+        while(bloppX < 400){    
+        image(bloppImage, bloppX, -30, 100, 100); 
+        bloppX= bloppX+50; 
+        } 
+ 
+ };
  
   
  mouseClicked = function(){
